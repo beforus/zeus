@@ -1,2 +1,2 @@
 # SKEL
-Friendy user interface for procuring visualize image
+Procurement of visualize image dashboard with analytics..
