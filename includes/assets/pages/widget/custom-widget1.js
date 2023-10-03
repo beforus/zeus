@@ -468,36 +468,36 @@ $(document).ready(function() {
     var chartData = [{
         "date": "2012-01-01",
         "distance": 227,
-        "townName": "New York",
-        "townName2": "New York",
+        "townName": "You Are Here.",
+        "townName2": "You Are Here.",
         "townSize": 25,
         "latitude": 40.71,
         "duration": 408
     }, {
         "date": "2012-01-02",
         "distance": 371,
-        "townName": "Washington",
+        "townName": "Aged",
         "townSize": 14,
         "latitude": 38.89,
         "duration": 482
     }, {
         "date": "2012-01-03",
         "distance": 433,
-        "townName": "Wilmington",
+        "townName": "Application",
         "townSize": 6,
         "latitude": 34.22,
         "duration": 562
     }, {
         "date": "2012-01-04",
         "distance": 345,
-        "townName": "Jacksonville",
+        "townName": "Age",
         "townSize": 7,
         "latitude": 30.35,
         "duration": 379
     }, {
         "date": "2012-01-05",
         "distance": 480,
-        "townName": "Miami",
+        "townName": "Appliction",
         "townName2": "Miami",
         "townSize": 10,
         "latitude": 25.83,
@@ -507,14 +507,14 @@ $(document).ready(function() {
         "distance": 386,
         "townName": "Tallahassee",
         "townSize": 7,
-        "latitude": 30.46,
+        "latitude": -30.46,
         "duration": 443
     }, {
         "date": "2012-01-07",
         "distance": 348,
         "townName": "New Orleans",
         "townSize": 10,
-        "latitude": 29.94,
+        "latitude": -29.94,
         "duration": 405
     }, {
         "date": "2012-01-08",
@@ -548,14 +548,14 @@ $(document).ready(function() {
     }, {
         "date": "2012-01-12",
         "distance": 534,
-        "townName": "Denver",
+        "townName": "Im",
         "townName2": "Denver",
         "townSize": 18,
         "latitude": 39.74,
         "duration": 810
     }, {
         "date": "2012-01-13",
-        "townName": "Salt Lake City",
+        "townName": "Age",
         "townSize": 12,
         "distance": 425,
         "duration": 670,
@@ -565,8 +565,8 @@ $(document).ready(function() {
         "date": "2012-01-14",
         "latitude": 36.1,
         "duration": 470,
-        "townName": "Las Vegas",
-        "townName2": "Las Vegas",
+        "townName": "Patient",
+        "townName2": "Patient",
         "bulletClass": "lastBullet"
     }, {
         "date": "2012-01-15"
