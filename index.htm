@@ -306,16 +306,19 @@
                 </div>
             </div>
             <!-- Sidebar inner chat end-->
+
+            <script>
+                var navbar = document.querySelector('.pcoded-navbar');
+                $(document).ready(function () {
+                        $(navbar).load('navigation.html');
+                    });
+            </script>
             <!-- Navigation -->
             <div class="pcoded-main-container">
                 <div class="pcoded-wrapper">
-                    <nav class="pcoded-navbar">
+                    <nav class="pcoded-navbar" id="nav">
 
-<script>
- $(document).ready(function () {
-         $(this).load('navigation.html');
-     });
-</script>
+
                      
                     </nav>
                     <div class="pcoded-content">
