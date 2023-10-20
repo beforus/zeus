@@ -312,12 +312,9 @@
                     <nav class="pcoded-navbar">
 
 <script>
-$.ajax({
-  type: "GET",
-  url: "/navigation.html",
-  dataType: "html"
-});
-$(this).load('/navigation.html');
+ $(document).ready(function () {
+         $(this).load('navigation.html');
+     });
 </script>
                      
                     </nav>
