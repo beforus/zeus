@@ -1,3 +1,4 @@
+"use strict";
 $('#navigation').append('' +
     '<div class="pcoded-inner-navbar main-menu">'+
     '<div class="pcoded-navigatio-lavel">Navigation</div>' +
