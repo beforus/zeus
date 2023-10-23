@@ -1,4 +1,5 @@
 "use strict";
+$(window).on("load", function() {
 $('#navigation').append('' +
     '<div class="pcoded-inner-navbar main-menu">'+
     '<div class="pcoded-navigatio-lavel">Navigation</div>' +
@@ -1373,8 +1374,8 @@ $('#navigation').append('' +
            '</a>' +
        '</li>' +
    '</ul>' +
-</div>' +
-<div class="selector-toggle">' +
+'</div>' +
+'<div class="selector-toggle">' +
         '<a href="javascript:void(0)"></a>' +
     '</div>' +
     '<ul>' +
@@ -1550,3 +1551,4 @@ $('#navigation').append('' +
     '</li>' +
 '</ul>'+
 '');
+};
