@@ -310,9 +310,11 @@
             <!-- Navigation -->
             <div class="pcoded-main-container">
                 <div class="pcoded-wrapper">
-                    <nav class="pcoded-navbar" id="navigation">// GeoJSON!
+                    <nav class="pcoded-navbar" id="navigation">
+                        <script>
                         var getJSON = require("async-get-json");
                         await getJSON("https://storage.googleapis.com/maps-devrel/google.json");
+                        </script>
                     </nav>
                     <div class="pcoded-content">
                         <div class="pcoded-inner-content">
