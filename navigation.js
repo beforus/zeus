@@ -12,7 +12,7 @@ $('#navigation').append('' +
             '<ul class="pcoded-submenu">' +
                 '<li class="active">' +
                     '<a href="index-1.htm">' +
-                        '<span class="pcoded-mtext">Default</span>' +
+                        '<span class="pcoded-mtext">99999</span>' +
                     '</a>' +
                 '</li>' +
                 '<li class="">' +
