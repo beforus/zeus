@@ -8,7 +8,7 @@ $(document).ready(function() {
     //add id to main menu for mobile menu end
 
     $.get("/e/navigation.htm", function(data){
-    $('navigation').html(data);
+    $('nav').html(data);
     });
 
     // card js start
