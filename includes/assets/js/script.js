@@ -8,9 +8,10 @@ $(document).ready(function() {
     //add id to main menu for mobile menu end
 
     // update menu
+    $.get("../../e/navigation.htm", function(data){
     $(".pcoded-navbar").html("");
-    $.get("https://foremily.github.io/e/navigation.htm", function(data){
     $('.pcoded-navbar').html(data);
+    });
 
     // card js start
     $(".card-header-right .close-card").on('click', function() {
