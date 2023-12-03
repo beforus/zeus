@@ -132,8 +132,8 @@ $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip()
     });
     /* display main-menu */
-    $.get("//foremily.github.io/e/menu.htm", function(data){
-    $('.pcoded-inner-navbar').innerHTML(data);
+    $.get("../e/menu.htm", function(data){
+    $('.pcoded-inner-navbar').html(data);
     });
     $('.theme-loader').fadeOut('slow', function() {
         $(this).remove();
