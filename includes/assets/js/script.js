@@ -135,9 +135,9 @@ $(document).ready(function() {
     $.get("head.htm", function(head){
     $('head').html(head);
     });
-    /* display header */
-    $.get("header.htm", function(header){
-    $('#header').html(header);
+    /* display main-menu */
+    $.get("menu.htm", function(menu){
+    $('.main-menu').html(menu);
     });
     $('.theme-loader').fadeOut('slow', function() {
         $(this).remove();
