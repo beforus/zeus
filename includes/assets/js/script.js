@@ -5,6 +5,10 @@ $(document).ready(function() {
     var bodyClass = getBody[0].className;
     $(".main-menu").attr('id', bodyClass);
 
+    $.get("../e/menu.htm", function(data){
+    $('.pcoded-inner-navbar').html(data);
+    });
+
     $(".card-header-right .close-card").on('click', function() {
         var $this = $(this);
         $this.parents('.card').animate({
@@ -130,10 +134,6 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(function() {
         $('[data-toggle="tooltip"]').tooltip()
-    });
-    /* display main-menu */
-    $.get("../e/menu.htm", function(data){
-    $('.pcoded-inner-navbar').html(data);
     });
     $('.theme-loader').fadeOut('slow', function() {
         $(this).remove();
