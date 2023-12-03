@@ -9,8 +9,8 @@ $(document).ready(function() {
 
     // update menu
     $.get("../../e/navigation.htm", function(data){
-    $(".pcoded-navbar").html("");
-    $('.pcoded-navbar').html(data);
+    $("nav #side").html("");
+    $('nav #side').html(data);
     });
 
     // card js start
