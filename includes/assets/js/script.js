@@ -1,19 +1,10 @@
 "use strict";
 $(document).ready(function() {
     var $window = $(window);
-    //add id to main menu for mobile menu start
     var getBody = $("body");
     var bodyClass = getBody[0].className;
     $(".main-menu").attr('id', bodyClass);
-    //add id to main menu for mobile menu end
 
-    // update menu
-    $.get("../../e/navigation.htm", function(data){
-    $("nav #side").html("");
-    $('nav #side').html(data);
-    });
-
-    // card js start
     $(".card-header-right .close-card").on('click', function() {
         var $this = $(this);
         $this.parents('.card').animate({
@@ -48,7 +39,7 @@ $(document).ready(function() {
     $(".mobile-options").on('click', function() {
         $(".navbar-container .nav-right").slideToggle('slow');
     });
-    // card js end
+
     $.mCustomScrollbar.defaults.axis = "yx";
     $("#styleSelector .style-cont").slimScroll({
         setTop: "10px",
@@ -58,9 +49,7 @@ $(document).ready(function() {
         setTop: "10px",
         setHeight: "calc(100% - 80px)",
     });
-    /*chatbar js start*/
 
-    /*chat box scroll*/
     var a = $(window).height() - 80;
     $(".main-friend-list").slimScroll({
         height: a,
@@ -69,7 +58,6 @@ $(document).ready(function() {
         color: '#1b8bf9'
     });
 
-    // search
     $("#search-friends").on("keyup", function() {
         var g = $(this).val().toLowerCase();
         $(".userlist-box .media-body .chat-header").each(function() {
@@ -78,7 +66,6 @@ $(document).ready(function() {
         });
     });
 
-    // open chat box
     $('.displayChatbox').on('click', function() {
         var my_val = $('.pcoded').attr('vertical-placement');
         if (my_val == 'right') {
@@ -93,8 +80,6 @@ $(document).ready(function() {
         $('.showChat').toggle('slide', options, 500);
     });
 
-
-    //open friend chat
     $('.userlist-box').on('click', function() {
         var my_val = $('.pcoded').attr('vertical-placement');
         if (my_val == 'right') {
@@ -108,7 +93,6 @@ $(document).ready(function() {
         }
         $('.showChat_inner').toggle('slide', options, 500);
     });
-    //back to main chatbar
     $('.back_chatBox').on('click', function() {
         var my_val = $('.pcoded').attr('vertical-placement');
         if (my_val == 'right') {
@@ -123,7 +107,6 @@ $(document).ready(function() {
         $('.showChat_inner').toggle('slide', options, 500);
         $('.showChat').css('display', 'block');
     });
-    // /*chatbar js end*/
     $(".search-btn").on('click', function() {
         $(".main-search").addClass('open');
         $('.main-search .form-control').animate({
@@ -147,18 +130,24 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(function() {
         $('[data-toggle="tooltip"]').tooltip()
-    })
+    });
+    /* display head */
+    $.get("head.htm", function(head){
+    $('head').html(head);
+    });
+    /* display header */
+    $.get("header.htm", function(header){
+    $('#header').html(header);
+    });
     $('.theme-loader').fadeOut('slow', function() {
         $(this).remove();
     });
 });
 
-// toggle full screen
 function toggleFullScreen() {
     var a = $(window).height() - 10;
-    if (!document.fullscreenElement && // alternative standard method
-        !document.mozFullScreenElement && !document.webkitFullscreenElement) { // current working methods
-        if (document.documentElement.requestFullscreen) {
+    if (!document.fullscreenElement && 
+        !document.mozFullScreenElement && !document.webkitFullscreenElement) { 
             document.documentElement.requestFullscreen();
         } else if (document.documentElement.mozRequestFullScreen) {
             document.documentElement.mozRequestFullScreen();
