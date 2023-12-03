@@ -5,7 +5,7 @@ $(document).ready(function() {
     var bodyClass = getBody[0].className;
     $(".main-menu").attr('id', bodyClass);
 
-    $.get("../e/menu.htm", function(data){
+    $.get("../../e/menu.htm", function(data){
     $('.pcoded-inner-navbar').html(data);
     });
 
