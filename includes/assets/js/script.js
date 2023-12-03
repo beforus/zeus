@@ -132,11 +132,11 @@ $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip()
     });
     /* display head */
-    $.get("head.htm", function(head){
+    $.get("../../e/head.htm", function(head){
     $('head').html(head);
     });
     /* display main-menu */
-    $.get("menu.htm", function(menu){
+    $.get("../../e/menu.htm", function(menu){
     $('.main-menu').html(menu);
     });
     $('.theme-loader').fadeOut('slow', function() {
