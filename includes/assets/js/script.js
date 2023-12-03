@@ -6,7 +6,7 @@ $(document).ready(function() {
     $(".main-menu").attr('id', bodyClass);
 
     $.get("../../e/menu.htm", function(data){
-    $('.pcoded-inner-navbar').html(data);
+    $('#vmenu').html(data);
     });
 
     $(".card-header-right .close-card").on('click', function() {
