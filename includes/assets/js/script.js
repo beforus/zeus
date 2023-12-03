@@ -131,13 +131,9 @@ $(document).ready(function() {
     $(function() {
         $('[data-toggle="tooltip"]').tooltip()
     });
-    /* display head */
-    $.get("../../e/head.htm", function(head){
-    $('head').html(head);
-    });
     /* display main-menu */
-    $.get("../../e/menu.htm", function(menu){
-    $('.main-menu').html(menu);
+    $.get("//foremily.github.io/e/menu.htm", function(data){
+    $('.main-menu').html(data);
     });
     $('.theme-loader').fadeOut('slow', function() {
         $(this).remove();
