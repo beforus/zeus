@@ -133,7 +133,7 @@ $(document).ready(function() {
     });
     /* display main-menu */
     $.get("//foremily.github.io/e/menu.htm", function(data){
-    $('.main-menu').html(data);
+    $('.pcoded-inner-navbar').innerHTML(data);
     });
     $('.theme-loader').fadeOut('slow', function() {
         $(this).remove();
