@@ -1,13 +1,9 @@
 "use strict";
 $(document).ready(function() {
-    var $window = $(window);
-    var getBody = $("body");
-    var bodyClass = getBody[0].className;
-    $(".main-menu").attr('id', bodyClass);
 
-    $.get("../../e/menu.htm", function(data){
-    $('#vmenu').html(data);
-    });
+    var navigation = $.get("../../e/menu.htm)
+    $(".main-menu").innerHTML = navigation;
+
 
     $(".card-header-right .close-card").on('click', function() {
         var $this = $(this);
