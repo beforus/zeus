@@ -95,7 +95,7 @@
   function setSticky() {
 
       $('#notes').postitall({
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          content: 'From the bottom up ',
           width: 150,
           height: 200,
           posX: 50,
@@ -110,7 +110,40 @@
       });
 
       $('#notes1').postitall({
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          content: 'Top down',
+          width: 150,
+          height: 200,
+          posX: 230,
+          posY: 200,
+          style: {
+              backgroundcolor: '#4680ff', //Background color in new postits when randomColor = false
+              textcolor: '#fff', //Text color
+              fontfamily: 'Open Sans', //Default font
+              fontsize: 'small', //Default font size
+              arrow: 'none', //Default arrow : none, top, right, bottom, left
+          },
+      });
+
+
+      $('#notes2').postitall({
+          content: 'waste in and sides out',
+          width: 150,
+          height: 200,
+          posX: 230,
+          posY: 200,
+          style: {
+              backgroundcolor: '#4680ff', //Background color in new postits when randomColor = false
+              textcolor: '#fff', //Text color
+              fontfamily: 'Open Sans', //Default font
+              fontsize: 'small', //Default font size
+              arrow: 'none', //Default arrow : none, top, right, bottom, left
+          },
+      });
+
+
+
+        $('#notes3').postitall({
+          content: 'he in in it is',
           width: 150,
           height: 200,
           posX: 230,
