@@ -1,8 +1,7 @@
 "use strict";
 $(document).ready(function() {
 
-    var navigation = $.get("./e/menu.htm)
-    $(".main-menu").innerHTML = navigation;
+
 
 
     $(".card-header-right .close-card").on('click', function() {
