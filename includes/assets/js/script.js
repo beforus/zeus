@@ -1,5 +1,6 @@
 "use strict";
 $(document).ready(function() {
+    const c = $this.pages();
     var $window = $(window);
     //add id to main menu for mobile menu start
     var getBody = $("body");
@@ -147,7 +148,16 @@ $(document).ready(function() {
     });
 });
 
-// toggle full screen
+
+function pages() {
+    var files = 
+    var select = $('main');
+    select.empty();
+    select.html(files)
+    return;
+  }
+
+
 function toggleFullScreen() {
     var a = $(window).height() - 10;
     if (!document.fullscreenElement && // alternative standard method
