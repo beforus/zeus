@@ -29,13 +29,6 @@
     <!-- Main Style css -->
     <link href="assets\css\style.css" rel="stylesheet" type="text/css" media="all">
     <style>
-        $black: #000000;
-$blue-ribbon: #0069ec;
-$dodger-blue: #25a3ff;
-$mine-shaft: #333333;
-$scorpion: #565656;
-$torch-red: #ff0033;
-$white: #ffffff;
 
 @mixin form-group-visible {
   visibility: visible;
@@ -398,22 +391,18 @@ $white: #ffffff;
                                    In the beginning thou eyes opened and light filled all within. 
                                 </p>
                                
-
-
 <input class="c-checkbox" type="checkbox" id="start">
-<input class="c-checkbox" type="checkbox" id="progress2">
-<input class="c-checkbox" type="checkbox" id="progress3">
+<input class="c-checkbox" type="checkbox" id="progress">
 <input class="c-checkbox" type="checkbox" id="finish">
 <div class="c-form__progress"></div>
 
 <div class="c-formContainer">
-  <div class="c-welcome">Welcome aboard!</div>
   <form class="c-form" action="">
     <div class="c-form__group">
       <label class="c-form__label" for="username">
                     <input
                         type="text"
-                        id="username"
+                        id="name"
                         class="c-form__input"
                         placeholder=" "
                         pattern="[^\s]+"
@@ -423,49 +412,14 @@ $white: #ffffff;
                         <span class="c-form__nextIcon"></span>
                     </label>
 
-      <span class="c-form__groupLabel">Initialize</span>
+      <span class="c-form__groupLabel">Whats your name?</span>
       <b class="c-form__border"></b>
       </label>
     </div>
 
-    <div class="c-form__group">
-      <label class="c-form__label" for="femail">
-                    <input
-                        type="email"
-                        id="femail"
-                        class="c-form__input"
-                        placeholder=" "
-                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                        required>
+    
 
-                    <label class="c-form__next" for="progress3" role="button">
-                        <span class="c-form__nextIcon"></span>
-                    </label>
-
-      <span class="c-form__groupLabel">What's your name?</span>
-      <b class="c-form__border"></b>
-      </label>
-    </div>
-
-    <div class="c-form__group">
-      <label class="c-form__label" for="fpass">
-                    <input
-                        type="password"
-                        id="fpass"
-                        class="c-form__input"
-                        placeholder=" "
-                        required>
-
-                    <label class="c-form__next" for="finish" role="button">
-                        <span class="c-form__nextIcon"></span>
-                    </label>
-
-      <span class="c-form__groupLabel">Create your password.</span>
-      <b class="c-form__border"></b>
-      </label>
-    </div>
-
-    <label class="c-form__toggle" for="start">Register<span class="c-form__toggleIcon"></span></label>
+    <label class="c-form__toggle" for="start">Log On<span class="c-form__toggleIcon"></span></label>
   </form>
 </div>
 
