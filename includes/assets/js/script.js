@@ -1,5 +1,6 @@
 "use strict";
 $(document).ready(function() {
+    $(menu).load("/e/navigation.htm");
     var $window = $(window);
     var getBody = $("body");
     var bodyClass = getBody[0].className;
