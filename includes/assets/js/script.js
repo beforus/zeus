@@ -1,14 +1,10 @@
 "use strict";
 $(document).ready(function() {
-    const c = $this.pages();
     var $window = $(window);
-    //add id to main menu for mobile menu start
     var getBody = $("body");
     var bodyClass = getBody[0].className;
     $(".main-menu").attr('id', bodyClass);
-    //add id to main menu for mobile menu end
 
-    // card js start
     $(".card-header-right .close-card").on('click', function() {
         var $this = $(this);
         $this.parents('.card').animate({
@@ -64,7 +60,7 @@ $(document).ready(function() {
         color: '#1b8bf9'
     });
 
-    // search
+
     $("#search-friends").on("keyup", function() {
         var g = $(this).val().toLowerCase();
         $(".userlist-box .media-body .chat-header").each(function() {
@@ -73,7 +69,7 @@ $(document).ready(function() {
         });
     });
 
-    // open chat box
+
     $('.displayChatbox').on('click', function() {
         var my_val = $('.pcoded').attr('vertical-placement');
         if (my_val == 'right') {
@@ -89,7 +85,7 @@ $(document).ready(function() {
     });
 
 
-    //open friend chat
+ 
     $('.userlist-box').on('click', function() {
         var my_val = $('.pcoded').attr('vertical-placement');
         if (my_val == 'right') {
@@ -103,7 +99,7 @@ $(document).ready(function() {
         }
         $('.showChat_inner').toggle('slide', options, 500);
     });
-    //back to main chatbar
+ 
     $('.back_chatBox').on('click', function() {
         var my_val = $('.pcoded').attr('vertical-placement');
         if (my_val == 'right') {
@@ -118,7 +114,7 @@ $(document).ready(function() {
         $('.showChat_inner').toggle('slide', options, 500);
         $('.showChat').css('display', 'block');
     });
-    // /*chatbar js end*/
+  
     $(".search-btn").on('click', function() {
         $(".main-search").addClass('open');
         $('.main-search .form-control').animate({
@@ -147,15 +143,6 @@ $(document).ready(function() {
         $(this).remove();
     });
 });
-
-
-function pages() {
-    var files = 
-    var select = $('main');
-    select.empty();
-    select.html(files)
-    return;
-  }
 
 
 function toggleFullScreen() {
