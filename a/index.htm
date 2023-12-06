@@ -59,14 +59,8 @@
                 <div class="navbar-wrapper">
 
                     <div class="navbar-logo" logo-theme="theme1">
-                        <a class="mobile-menu" id="mobile-collapse" href="#!">
-                            <i class="feather icon-menu"></i>
-                        </a>
-                        <a href="/foremily/index-1.htm">
+                        <a onclick="javascript:activateDefense()">
                             <img class="img-fluid" src="/foremily/includes/assets/images/logo.png" alt="Theme-Logo">
-                        </a>
-                        <a class="mobile-options">
-                            <i class="feather icon-more-horizontal"></i>
                         </a>
                     </div>
 
@@ -298,9 +292,7 @@
     <script type="text/javascript" src="/foremily/includes/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="/foremily/includes/bower_components/popper.js/js/popper.min.js"></script>
     <script type="text/javascript" src="/foremily/includes/bower_components/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/foremily/includes/assets/js/common-pages.js"></script>
-    <script>
-        
+    <script type="text/javascript" src="/foremily/includes/assets/js/common-pages.js"></script>        
     <script>
           (function () {
               var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function (callback) {
@@ -478,20 +470,17 @@
           }
           animate();
     </script>
-    <script>
-        /*
-* newsTicker: Jquery plugin for news ticker
-*
-* latest version and complete README available on Github:
-* https://github.com/jayeshmagare/newsTicker
-*
-* Copyright 2013 Jayesh Magare (jayesh.magare@gmail.com)
-* Please file issues on Github : https://github.com/jayeshmagare/newsTicker/issues
-* Licensed under the MIT license.
-*/
 
+<script>
+function activateDefense(){
+	var logo = document.getElementById("status"),
+	if (logo.attr == "under.png")logo.attr="oman.png";
+	if (logo.attr == "oman.png")logo.attr="under.png";
+	return false;
+}
+</script>
+<script>   
 (function ($) {
-
     $.fn.newsTicker = function (options) {
         var options = $.extend({}, $.fn.newsTicker.config, options);
 		
@@ -685,14 +674,13 @@
     };
 
 }(jQuery));
-    </script>
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8MLZ6MMCZW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-8MLZ6MMCZW');
 </script>
 </body>
