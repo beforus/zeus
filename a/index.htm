@@ -33,10 +33,7 @@
 
 </head>
 
-<body>
-
-	
-	
+<body class="canvas">	
         <div class="pcoded-container navbar-wrapper">
 
             <nav>
@@ -45,7 +42,7 @@
 
                     <div class="navbar-logo" logo-theme="theme1">
                         <a onclick="javascript:activateDefense()">
-                            <img class="img-fluid" src="/foremily/includes/assets/images/logo.png" alt="Theme-Logo">
+                            <img id="logo" class="img-fluid" src="/foremily/includes/assets/images/logo.png">
                         </a>
                     </div>
 
@@ -153,11 +150,11 @@
         </div>
      </section>
         <!-- end of container-fluid -->
-<canvas id="bgCanvas" ></canvas>
+
     <!-- Warning Section Starts -->
     <!-- Older IE warning message -->
     <!--[if lt IE 10]>
-<div class="ie-warning">
+    <div class="ie-warning">
     <h1>Warning!!</h1>
     <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
     <div class="iew-container">
@@ -213,7 +210,7 @@
           })();
         
           // Terrain stuff.
-          var background = document.getElementById("bgCanvas"),
+          var background = document.querySelector('body[class="canvas"]');
               bgCtx = background.getContext("2d"),
               width = window.innerWidth,
               height = document.body.offsetHeight;
@@ -384,9 +381,13 @@
 
 <script>
 function activateDefense(){
-	var logo = document.getElementById("status"),
-	if (logo.attr == "under.png")logo.attr="oman.png";
-	if (logo.attr == "oman.png")logo.attr="under.png";
+	var src = document.getElementById("logo").src;
+	if(src=="/foremily/includes/assets/images/golo.png"){
+		document.getElementById("logo").src="/foremily/includes/assets/images/logo.png";
+	}
+	if(src=="/foremily/includes/assets/images/logo.png"){
+		document.getElementById("logo").src="/foremily/includes/assets/images/golo.png";
+	}
 	return false;
 }
 </script>
