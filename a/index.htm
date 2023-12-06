@@ -1,7 +1,4 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <title>Sign In</title>
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,19 +27,39 @@
     <link rel="stylesheet" type="text/css" href="/foremily/includes/assets/icon/feather/css/feather.css">
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="/foremily/includes/assets/css/style.css">
-
+    <style>
+    <!--
+    body, html {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+    canvas {
+    position:absolute;
+    top:0;
+    left:0;
+    }
+    -->
+    </style>
+<meta http-equiv="origin-trial" keep="true" content="" />
 </head>
 
-<body class="canvas">	
-        <div class="pcoded-container navbar-wrapper">
+<body>
 
-            <nav>
-		  
+    <div id="pcoded" class="pcoded load-height">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+<canvas id="bgCanvas" width="1920" height="932">
+            <nav class="navbar header-navbar pcoded-header auth-header" header-theme="theme1">
                 <div class="navbar-wrapper">
 
                     <div class="navbar-logo" logo-theme="theme1">
                         <a onclick="javascript:activateDefense()">
-                            <img id="logo" class="img-fluid" src="/foremily/includes/assets/images/logo.png">
+                            <img class="img-fluid" src="/foremily/includes/assets/images/logo.png" alt="Theme-Logo">
                         </a>
                     </div>
 
@@ -75,6 +92,36 @@
                                             <h6>Notifications</h6>
                                             <label class="label label-danger">New</label>
                                         </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="d-flex align-self-center img-radius" src="/foremily/includes/assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">John Doe</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="d-flex align-self-center img-radius" src="/foremily/includes/assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Joseph William</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <img class="d-flex align-self-center img-radius" src="/foremily/includes/assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                                <div class="media-body">
+                                                    <h5 class="notification-user">Sara Soudein</h5>
+                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                    <span class="notification-time">30 minutes ago</span>
+                                                </div>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -86,12 +133,50 @@
                                     </div>
                                 </div>
                             </li>
+                            <li class="user-profile header-notification">
+                                <div class="dropdown-primary dropdown">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="/foremily/includes/assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                                        <span>John Doe</span>
+                                        <i class="feather icon-chevron-down"></i>
+                                    </div>
+                                    <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                        <li>
+                                            <a href="#!">
+                                                <i class="feather icon-settings"></i> Settings
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="user-profile.htm">
+                                                <i class="feather icon-user"></i> Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="email-inbox.htm">
+                                                <i class="feather icon-mail"></i> My Messages
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="auth-lock-screen.htm">
+                                                <i class="feather icon-lock"></i> Lock Screen
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="auth-normal-sign-in.htm">
+                                                <i class="feather icon-log-out"></i> Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-        </div>
+        </canvas></div>
         <!-- Menu header end -->
+	
         <section class="login-block with-header">
             <!-- Container-fluid starts -->
             <div class="container-fluid">
@@ -146,15 +231,22 @@
                 <!-- end of col-sm-12 -->
             </div>
             <!-- end of row -->
-		<div id="newsData" class="row newsCss"></div>
         </div>
      </section>
+<div id="newsData" class="row newsCss"></div>
+<ul id="newsList">
+<li class="news-item">ALERT Score: 9 Status: CLEAR Time: 00:00:-1 Location:-1 Log#: 42950-00 Confirmed:TRUE</li>
+<li class="news-item">ALERT Score: 9 Status: CLEAR Time: 00:00:-1 Location:-1 Log#: 42951-01 Confirmed:TRUE</li>
+<li class="news-item">RETRYING #42922-23 Score: 9 Status: RETRYING Time: 00:00:-1 Location:-1 Confirmed:N/A</li>
+</ul>
+</div>
         <!-- end of container-fluid -->
 
+    
     <!-- Warning Section Starts -->
     <!-- Older IE warning message -->
     <!--[if lt IE 10]>
-    <div class="ie-warning">
+<div class="ie-warning">
     <h1>Warning!!</h1>
     <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
     <div class="iew-container">
@@ -193,6 +285,7 @@
     </div>
     <p>Sorry for the inconvenience!</p>
 </div>
+</canvas>
 <![endif]-->
     <!-- Warning Section Ends -->
     <!-- Required Jquery -->
@@ -210,7 +303,7 @@
           })();
         
           // Terrain stuff.
-          var background = document.querySelector('body[class="canvas"]');
+          var background = document.getElementById("bgCanvas"),
               bgCtx = background.getContext("2d"),
               width = window.innerWidth,
               height = document.body.offsetHeight;
@@ -377,15 +470,15 @@
               requestAnimationFrame(animate);
           }
           animate();
-    </script>
+    </script><canvas width="1920" height="932"></canvas><canvas width="1920" height="932"></canvas><canvas width="1920" height="932"></canvas>
 
 <script>
 function activateDefense(){
 	var src = document.getElementById("logo").src;
-	if(src=="/foremily/includes/assets/images/golo.png"){
+	if(src="/foremily/includes/assets/images/golo.png"){
 		document.getElementById("logo").src="/foremily/includes/assets/images/logo.png";
 	}
-	if(src=="/foremily/includes/assets/images/logo.png"){
+	if(src="/foremily/includes/assets/images/logo.png"){
 		document.getElementById("logo").src="/foremily/includes/assets/images/golo.png";
 	}
 	return false;
@@ -595,6 +688,7 @@ function activateDefense(){
   gtag('js', new Date());
   gtag('config', 'G-8MLZ6MMCZW');
 </script>
-</body>
 
-</html>
+
+
+</body></html>
