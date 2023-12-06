@@ -1,489 +1,167 @@
-<html lang="en"><head>
-    <title>Sign In</title>
-    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 10]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="#">
-    <meta name="keywords" content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
-    <meta name="author" content="#">
-    <!-- Favicon icon -->
-    <link rel="icon" href="/foremily/includes/assets/images/favicon.ico" type="image/x-icon">
-    <!-- Google font-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
-    <!-- Required Fremwork -->
-    <link rel="stylesheet" type="text/css" href="/foremily/includes/bower_components/bootstrap/css/bootstrap.min.css">
-    <!-- themify-icons line icon -->
-    <link rel="stylesheet" type="text/css" href="/foremily/includes/assets/icon/themify-icons/themify-icons.css">
-    <!-- ico font -->
-    <link rel="stylesheet" type="text/css" href="/foremily/includes/assets/icon/icofont/css/icofont.css">
-    <!-- feather Awesome -->
-    <link rel="stylesheet" type="text/css" href="/foremily/includes/assets/icon/feather/css/feather.css">
-    <!-- Style.css -->
-    <link rel="stylesheet" type="text/css" href="/foremily/includes/assets/css/style.css">
-    <style>
-    <!--
-    body, html {
-    background-color: #000;
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    margin: 0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
     padding: 0;
-    overflow: hidden;
-    }
-    canvas {
-    position:absolute;
-    top:0;
-    left:0;
-    }
-    -->
-    </style>
-<meta http-equiv="origin-trial" keep="true" content="" />
-</head>
-
-<body>
-
-    <div id="pcoded" class="pcoded load-height">
-        <div class="pcoded-overlay-box"></div>
-        <div class="pcoded-container navbar-wrapper">
-<canvas id="bgCanvas" width="1920" height="932">
-            <nav class="navbar header-navbar pcoded-header auth-header" header-theme="theme1">
-                <div class="navbar-wrapper">
-
-                    <div class="navbar-logo" logo-theme="theme1">
-                        <a onclick="javascript:activateDefense()">
-                            <img class="img-fluid" src="/foremily/includes/assets/images/logo.png" alt="Theme-Logo">
-                        </a>
-                    </div>
-
-                    <div class="navbar-container container-fluid">
-                        <ul class="nav-left">
-                            <li class="header-search">
-                                <div class="main-search morphsearch-search">
-                                    <div class="input-group">
-                                        <span class="input-group-addon search-close"><i class="feather icon-x"></i></span>
-                                        <input type="text" class="form-control">
-                                        <span class="input-group-addon search-btn"><i class="feather icon-search"></i></span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="#!" onclick="javascript:toggleFullScreen()">
-                                    <i class="feather icon-maximize full-screen"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="nav-right">
-                            <li class="header-notification">
-                                <div class="dropdown-primary dropdown">
-                                    <div class="dropdown-toggle" data-toggle="dropdown">
-                                        <i class="feather icon-bell"></i>
-                                        <span class="badge bg-c-pink">5</span>
-                                    </div>
-                                    <ul class="show-notification notification-view dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                                        <li>
-                                            <h6>Notifications</h6>
-                                            <label class="label label-danger">New</label>
-                                        </li>
-                                        <li>
-                                            <div class="media">
-                                                <img class="d-flex align-self-center img-radius" src="/foremily/includes/assets/images/avatar-4.jpg" alt="Generic placeholder image">
-                                                <div class="media-body">
-                                                    <h5 class="notification-user">John Doe</h5>
-                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                    <span class="notification-time">30 minutes ago</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="media">
-                                                <img class="d-flex align-self-center img-radius" src="/foremily/includes/assets/images/avatar-3.jpg" alt="Generic placeholder image">
-                                                <div class="media-body">
-                                                    <h5 class="notification-user">Joseph William</h5>
-                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                    <span class="notification-time">30 minutes ago</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="media">
-                                                <img class="d-flex align-self-center img-radius" src="/foremily/includes/assets/images/avatar-4.jpg" alt="Generic placeholder image">
-                                                <div class="media-body">
-                                                    <h5 class="notification-user">Sara Soudein</h5>
-                                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                    <span class="notification-time">30 minutes ago</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="header-notification">
-                                <div class="dropdown-primary dropdown">
-                                    <div class="displayChatbox dropdown-toggle" data-toggle="dropdown">
-                                        <i class="feather icon-message-square"></i>
-                                        <span class="badge bg-c-green">3</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="user-profile header-notification">
-                                <div class="dropdown-primary dropdown">
-                                    <div class="dropdown-toggle" data-toggle="dropdown">
-                                        <img src="/foremily/includes/assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-                                        <span>John Doe</span>
-                                        <i class="feather icon-chevron-down"></i>
-                                    </div>
-                                    <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                                        <li>
-                                            <a href="#!">
-                                                <i class="feather icon-settings"></i> Settings
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="user-profile.htm">
-                                                <i class="feather icon-user"></i> Profile
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="email-inbox.htm">
-                                                <i class="feather icon-mail"></i> My Messages
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-lock-screen.htm">
-                                                <i class="feather icon-lock"></i> Lock Screen
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-normal-sign-in.htm">
-                                                <i class="feather icon-log-out"></i> Logout
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </canvas></div>
-        <!-- Menu header end -->
-	
-        <section class="login-block with-header">
-            <!-- Container-fluid starts -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <!-- Authentication card start -->
-                        <form class="md-float-material form-material m-t-40 m-b-40">
-                            <div class="auth-box card">
-                                <div class="card-block">
-                                    <div class="row m-b-20">
-                                        <div class="col-md-12">
-                                            <h3 class="text-center txt-primary">Sign In</h3>
-                                        </div>
-                                    </div>
-                                    <div class="row m-b-20">
-                                        <div class="col-md-6">
-                                            <button class="btn btn-facebook m-b-20 btn-block"><i class="icofont icofont-social-facebook"></i>facebook</button>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <button class="btn btn-twitter m-b-20 btn-block"><i class="icofont icofont-social-twitter"></i>twitter</button>
-                                        </div>
-                                    </div>
-                                    <p class="text-muted text-center p-b-5">Sign in with your birthdate</p>
-                                    <div class="form-group form-primary">
-                                        <input type="text" name="user-name" class="form-control" required="" placeholder="birthdate">
-                                        <span class="form-bar"></span>
-                                    </div>
-                                    <div class="row m-t-25 text-left">
-                                        <div class="col-12">
-                                            <div class="checkbox-fade fade-in-primary">
-                                                <label>
-                                                    <input type="checkbox" value="">
-                                                    <span class="cr"><i class="cr-icon icofont icofont-ui-check txt-primary"></i></span>
-                                                    <span class="text-inverse">Remember me</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row m-t-30">
-                                        <div class="col-md-12">
-                                            <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">SIGNIN</button>
-            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        
-                        
-                        <!-- Authentication card end -->
-                </div>
-                <!-- end of col-sm-12 -->
-            </div>
-            <!-- end of row -->
-        </div>
-     </section>
-<div id="newsData" class="row newsCss"></div>
-<ul id="newsList">
-<li class="news-item">ALERT Score: 9 Status: CLEAR Time: 00:00:-1 Location:-1 Log#: 42950-00 Confirmed:TRUE</li>
-<li class="news-item">ALERT Score: 9 Status: CLEAR Time: 00:00:-1 Location:-1 Log#: 42951-01 Confirmed:TRUE</li>
-<li class="news-item">RETRYING #42922-23 Score: 9 Status: RETRYING Time: 00:00:-1 Location:-1 Confirmed:N/A</li>
-</ul>
-</div>
-        <!-- end of container-fluid -->
-
-    
-    <!-- Warning Section Starts -->
-    <!-- Older IE warning message -->
-    <!--[if lt IE 10]>
-<div class="ie-warning">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
-    <div class="iew-container">
-        <ul class="iew-download">
-            <li>
-                <a href="http://www.google.com/chrome/">
-                    <img src="../files/assets/images/browser/chrome.png" alt="Chrome">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mozilla.org/en-US/firefox/new/">
-                    <img src="../files/assets/images/browser/firefox.png" alt="Firefox">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.opera.com">
-                    <img src="../files/assets/images/browser/opera.png" alt="Opera">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.apple.com/safari/">
-                    <img src="../files/assets/images/browser/safari.png" alt="Safari">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                    <img src="../files/assets/images/browser/ie.png" alt="">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <p>Sorry for the inconvenience!</p>
-</div>
-</canvas>
-<![endif]-->
-    <!-- Warning Section Ends -->
-    <!-- Required Jquery -->
-    <script type="text/javascript" src="/foremily/includes/bower_components/jquery/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/foremily/includes/bower_components/jquery-ui/js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/foremily/includes/bower_components/popper.js/js/popper.min.js"></script>
-    <script type="text/javascript" src="/foremily/includes/bower_components/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/foremily/includes/assets/js/common-pages.js"></script>        
-    <script>
-          (function () {
-              var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function (callback) {
-                      window.setTimeout(callback, 1000 / 60);
-                  };
-              window.requestAnimationFrame = requestAnimationFrame;
-          })();
-        
-          // Terrain stuff.
-          var background = document.getElementById("bgCanvas"),
-              bgCtx = background.getContext("2d"),
-              width = window.innerWidth,
-              height = document.body.offsetHeight;
-        
-          (height < 400) ? height = 400 : height;
-        
-          background.width = width;
-          background.height = height;
-        
-          function Terrain(options) {
-              options = options || {};
-              this.terrain = document.createElement("canvas");
-              this.terCtx = this.terrain.getContext("2d");
-              this.scrollDelay = options.scrollDelay || 90;
-              this.lastScroll = new Date().getTime();
-        
-              this.terrain.width = width;
-              this.terrain.height = height;
-              this.fillStyle = options.fillStyle || "#191D4C";
-              this.mHeight = options.mHeight || height;
-        
-              // generate
-              this.points = [];
-        
-              var displacement = options.displacement || 140,
-                  power = Math.pow(2, Math.ceil(Math.log(width) / (Math.log(2))));
-        
-              // set the start height and end height for the terrain
-              this.points[0] = this.mHeight;//(this.mHeight - (Math.random() * this.mHeight / 2)) - displacement;
-              this.points[power] = this.points[0];
-        
-              // create the rest of the points
-              for (var i = 1; i < power; i *= 2) {
-                  for (var j = (power / i) / 2; j < power; j += power / i) {
-                      this.points[j] = ((this.points[j - (power / i) / 2] + this.points[j + (power / i) / 2]) / 2) + Math.floor(Math.random() * -displacement + displacement);
-                  }
-                  displacement *= 0.6;
-              }
-        
-              document.body.appendChild(this.terrain);
-          }
-        
-          Terrain.prototype.update = function () {
-              // draw the terrain
-              this.terCtx.clearRect(0, 0, width, height);
-              this.terCtx.fillStyle = this.fillStyle;
-              
-              if (new Date().getTime() > this.lastScroll + this.scrollDelay) {
-                  this.lastScroll = new Date().getTime();
-                  this.points.push(this.points.shift());
-              }
-        
-              this.terCtx.beginPath();
-              for (var i = 0; i <= width; i++) {
-                  if (i === 0) {
-                      this.terCtx.moveTo(0, this.points[0]);
-                  } else if (this.points[i] !== undefined) {
-                      this.terCtx.lineTo(i, this.points[i]);
-                  }
-              }
-        
-              this.terCtx.lineTo(width, this.terrain.height);
-              this.terCtx.lineTo(0, this.terrain.height);
-              this.terCtx.lineTo(0, this.points[0]);
-              this.terCtx.fill();
-          }
-        
-        
-          // Second canvas used for the stars
-          bgCtx.fillStyle = '#05004c';
-          bgCtx.fillRect(0, 0, width, height);
-        
-          // stars
-          function Star(options) {
-              this.size = Math.random() * 2;
-              this.speed = Math.random() * .05;
-              this.x = options.x;
-              this.y = options.y;
-          }
-        
-          Star.prototype.reset = function () {
-              this.size = Math.random() * 2;
-              this.speed = Math.random() * .05;
-              this.x = width;
-              this.y = Math.random() * height;
-          }
-        
-          Star.prototype.update = function () {
-              this.x -= this.speed;
-              if (this.x < 0) {
-                  this.reset();
-              } else {
-               
-                  bgCtx.fillRect(this.x, this.y, this.size, this.size);
-              }
-          }
-        
-          function ShootingStar() {
-              this.reset();
-          }
-        
-          ShootingStar.prototype.reset = function () {
-              this.x = Math.random() * width;
-              this.y = 0;
-              this.len = (Math.random() * 80) + 10;
-              this.speed = (Math.random() * 10) + 6;
-              this.size = (Math.random() * 1) + 0.1;
-              // this is used so the shooting stars arent constant
-              this.waitTime = new Date().getTime() + (Math.random() * 3000) + 500;
-              this.active = false;
-          }
-        
-          ShootingStar.prototype.update = function () {
-              if (this.active) {
-                  this.x -= this.speed;
-                  this.y += this.speed;
-                  if (this.x < 0 || this.y >= height) {
-                     
-                      this.reset();
-                  } else {
-                      bgCtx.lineWidth = this.size;
-                      bgCtx.beginPath();
-                      bgCtx.moveTo(this.x, this.y);
-                      bgCtx.lineTo(this.x + this.len, this.y - this.len);
-                      bgCtx.stroke();
-                  }
-              } else {
-                  if (this.waitTime < new Date().getTime()) {
-                      this.active = true;
-                  }
-              }
-          }
-        
-          var entities = [];
-        
-          // init the stars
-          for (var i = 0; i < height; i++) {
-	          
-              entities.push(new Star({
-                  x: Math.random() * width,
-                  y: Math.random() * height
-              }));
-          }
-        
-          // Add 2 shooting stars that just cycle.
-          entities.push(new ShootingStar());
-          entities.push(new ShootingStar());
-          entities.push(new Terrain({mHeight : (height/2)-120}));
-          entities.push(new Terrain({displacement : 120, scrollDelay : 50, fillStyle : "rgb(17,20,40)", mHeight : (height/2)-60}));
-          entities.push(new Terrain({displacement : 100, scrollDelay : 20, fillStyle : "rgb(10,10,5)", mHeight : height/2}));
-        
-          //animate background
-          function animate() {
-              bgCtx.fillStyle = '#110E19';
-              bgCtx.fillRect(0, 0, width, height);
-              bgCtx.fillStyle = '#ffffff';
-              bgCtx.strokeStyle = '#ffffff';
-        
-              var entLen = entities.length;
-        
-              while (entLen--) {
-                  entities[entLen].update();
-              }
-              requestAnimationFrame(animate);
-          }
-          animate();
-    </script><canvas width="1920" height="932"></canvas><canvas width="1920" height="932"></canvas><canvas width="1920" height="932"></canvas>
-
-<script>
-function activateDefense(){
-	var src = document.getElementById("logo").src;
-	if(src="/foremily/includes/assets/images/golo.png"){
-		document.getElementById("logo").src="/foremily/includes/assets/images/logo.png";
-	}
-	if(src="/foremily/includes/assets/images/logo.png"){
-		document.getElementById("logo").src="/foremily/includes/assets/images/golo.png";
-	}
-	return false;
+    margin: 0;
+    box-sizing: border-box;
 }
-</script>
+body{
+    background-color: #080710;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button>Log In</button>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+    </form>
+
+	<div id="newsData" class="row newsCss"></div>
+		<ul id="newsList">
+			<li class="news-item">ALERT Score: 9 Status: CLEAR Time: 00:00:-1 Location:-1 Log#: 42950-00 Confirmed:TRUE</li>
+			<li class="news-item">ALERT Score: 9 Status: CLEAR Time: 00:00:-1 Location:-1 Log#: 42951-01 Confirmed:TRUE</li>
+			<li class="news-item">RETRYING #42922-23 Score: 9 Status: RETRYING Time: 00:00:-1 Location:-1 Confirmed:N/A</li>
+		</ul>
+	</div>
 <script>   
 (function ($) {
     $.fn.newsTicker = function (options) {
@@ -680,15 +358,21 @@ function activateDefense(){
 
 }(jQuery));
 </script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8MLZ6MMCZW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-8MLZ6MMCZW');
-</script>
+</body>
+</html>
 
 
 
-</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
