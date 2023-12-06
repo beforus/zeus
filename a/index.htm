@@ -26,11 +26,7 @@ body {
     margin: 0px;
     overflow: hidden;
 }
-.newsCss{
-	height:50px;
-	border:1px solid #c3501d;
-	padding:15px;
-}
+
 form{
     height: 520px;
     width: 400px;
@@ -122,11 +118,7 @@ canvas {
 </head>
 <body>
 <canvas id="bgCanvas"></canvas>
-    <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
-    <form>
+    <form action="/">
         <label for="username">Please enter your date of birth.</label>
         <input type="text" placeholder="00/00/0000" id="birthdate">
 
@@ -136,19 +128,6 @@ canvas {
           <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
         </div>
     </form>
-
-	<div id="newsData" class="row newsCss">
-		<ul id="newsList">
-			<li class="news-item">ALERT Score: 9 Status: CLEAR Time: 00:00:-1 Location:-1 Log#: 42950-00 Confirmed:TRUE</li>
-			<li class="news-item">ALERT Score: 9 Status: CLEAR Time: 00:00:-1 Location:-1 Log#: 42951-01 Confirmed:TRUE</li>
-			<li class="news-item">RETRYING #42922-23 Score: 9 Status: RETRYING Time: 00:00:-1 Location:-1 Confirmed:N/A</li>
-		</ul>
-	</div>
-<script>
-$(function () {
-	$('#newsList').newsTicker();
-});
-</script>
 <script>   
 // three.js - https://github.com/mrdoob/three.js
 'use strict';var THREE=THREE||{REVISION:"56"};self.console=self.console||{info:function(){},log:function(){},debug:function(){},warn:function(){},error:function(){}};self.Int32Array=self.Int32Array||Array;self.Float32Array=self.Float32Array||Array;String.prototype.trim=String.prototype.trim||function(){return this.replace(/^\s+|\s+$/g,"")};
