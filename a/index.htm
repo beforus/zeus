@@ -35,12 +35,11 @@
 
 <body>
 
-	<div id="pcoded" class="pcoded load-height">
-        <div class="pcoded-overlay-box"></div>
+	<canvas id="bgCanvas">
 	
         <div class="pcoded-container navbar-wrapper">
 
-            <nav class="navbar header-navbar pcoded-header auth-header" header-theme="theme1">
+            <nav>
 		  
                 <div class="navbar-wrapper">
 
@@ -96,8 +95,6 @@
             </nav>
         </div>
         <!-- Menu header end -->
-	<canvas id="bgCanvas"></canvas>
-	<div id="newsData" class="row newsCss"></div>
         <section class="login-block with-header">
             <!-- Container-fluid starts -->
             <div class="container-fluid">
@@ -152,11 +149,11 @@
                 <!-- end of col-sm-12 -->
             </div>
             <!-- end of row -->
+		<div id="newsData" class="row newsCss"></div>
         </div>
      </section>
-</div>
         <!-- end of container-fluid -->
-    </div>
+</canvas>
     <!-- Warning Section Starts -->
     <!-- Older IE warning message -->
     <!--[if lt IE 10]>
