@@ -5,7 +5,7 @@
  function Redirect() {
      const urlParams = new URLSearchParams(queryString);
      if (urlParams.get('time')) {
-         window.location = "dashboard.htm";
+         window.location = "dashboard.htm?t="+$time;
      } else {
          window.location = "offline-ui.htm";
      }
