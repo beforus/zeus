@@ -2127,9 +2127,9 @@
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8MLZ6MMCZW"></script>
 <script>
 function milliCounter(){
-    var ms = document.getElementById('ms');
-    var sec = ms.innerHtml;
-   document.getElementById('ms').innerHTML = sec + 1;
+    let ms = document.getElementById('ms');
+    let sec = ms.innerHtml;
+    ms.innerHTML = sec+1;
 }
 setTimeout(() => {
  milliCounter();
