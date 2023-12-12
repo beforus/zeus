@@ -1686,7 +1686,7 @@
                                                     <div class="card-block">
                                                         <div class="row align-items-center">
                                                             <div class="col-8">
-                                                                <h4 id="ms" class="text-c-blue f-w-600"></h4>
+                                                                <h4 id="ms" class="text-c-blue f-w-600">1</h4>
                                                                 <h6 class="text-muted m-b-0">Milliseconds</h6>
                                                             </div>
                                                             <div class="col-4 text-right">
@@ -2126,13 +2126,13 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8MLZ6MMCZW"></script>
 <script>
-function timer (){
-    var ms = document.getElementById("hour");
+function milliCounter(){
+    var ms = document.getElementById('ms');
     var sec = ms.innerHtml;
-   document.getElementById('hour').innerHTML = sec + 1;
+   document.getElementById('ms').innerHTML = sec + 1;
 }
 setTimeout(() => {
- timer();
+ milliCounter();
 }, 1);
 </script>
 
