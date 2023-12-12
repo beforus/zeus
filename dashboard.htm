@@ -1610,8 +1610,8 @@
                                                     <div class="card-block">
                                                         <div class="row align-items-center">
                                                             <div class="col-8">
-                                                                <h4 class="text-c-yellow f-w-600">$30200</h4>
-                                                                <h6 class="text-muted m-b-0">All Earnings</h6>
+                                                                <h4 id="hours" class="text-c-yellow f-w-600"></h4>
+                                                                <h6 class="text-muted m-b-0">Hours</h6>
                                                             </div>
                                                             <div class="col-4 text-right">
                                                                 <i class="feather icon-bar-chart f-28"></i>
@@ -1636,8 +1636,8 @@
                                                     <div class="card-block">
                                                         <div class="row align-items-center">
                                                             <div class="col-8">
-                                                                <h4 class="text-c-green f-w-600">290+</h4>
-                                                                <h6 class="text-muted m-b-0">Page Views</h6>
+                                                                <h4 id="min" class="text-c-green f-w-600"></h4>
+                                                                <h6 class="text-muted m-b-0">Minutes</h6>
                                                             </div>
                                                             <div class="col-4 text-right">
                                                                 <i class="feather icon-file-text f-28"></i>
@@ -1661,8 +1661,8 @@
                                                     <div class="card-block">
                                                         <div class="row align-items-center">
                                                             <div class="col-8">
-                                                                <h4 class="text-c-pink f-w-600">145</h4>
-                                                                <h6 class="text-muted m-b-0">Task Completed</h6>
+                                                                <h4 id="sec" class="text-c-pink f-w-600">145</h4>
+                                                                <h6 class="text-muted m-b-0">Seconds</h6>
                                                             </div>
                                                             <div class="col-4 text-right">
                                                                 <i class="feather icon-calendar f-28"></i>
@@ -1686,8 +1686,8 @@
                                                     <div class="card-block">
                                                         <div class="row align-items-center">
                                                             <div class="col-8">
-                                                                <h4 class="text-c-blue f-w-600">500</h4>
-                                                                <h6 class="text-muted m-b-0">Downloads</h6>
+                                                                <h4 id="ms" class="text-c-blue f-w-600"></h4>
+                                                                <h6 class="text-muted m-b-0">Milliseconds</h6>
                                                             </div>
                                                             <div class="col-4 text-right">
                                                                 <i class="feather icon-download f-28"></i>
@@ -2125,6 +2125,25 @@
     <script type="text/javascript" src="includes\assets\js\script.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8MLZ6MMCZW"></script>
+<script>
+function timer (){
+   let d = new Date()
+   document.getElementById('hour')${Math.floor(d.now() / 60000000);
+   document.getElementById('min')${Math.floor(d.now() / 60000);
+   document.getElementById('sec')${Math.floor(d.now() / 1000);
+   document.getElementById('ms')${Math.floor(d.now() / 1);
+}
+setTimeout(() => {
+ timer();
+}, 1);
+</script>
+
+    
+<script>    
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', d);
+  gtag('config', 'G-8MLZ6MMCZW');
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
