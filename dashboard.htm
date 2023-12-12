@@ -2127,12 +2127,9 @@
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8MLZ6MMCZW"></script>
 <script>
 function timer (){
-let date = new Date(now);
-let seconds = date.getUTCSeconds();
-   document.getElementById('hour').innerHTML = seconds;
-   document.getElementById('min').innerHTML = seconds;
-   document.getElementById('sec').innerHTML = seconds;
-   document.getElementById('ms').innerHTML = seconds;
+    var ms = document.getElementById("hour");
+    var sec = ms.innerHtml;
+   document.getElementById('hour').innerHTML = sec + 1;
 }
 setTimeout(() => {
  timer();
