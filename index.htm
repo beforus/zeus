@@ -2,12 +2,12 @@
 <html>
     <head>
 <script>
- function rerouter(){const urlParams = new URLSearchParams(queryString); var t=urlParams.get('time'); var d=urlParams.get('error'); var v; if (t) { var v = "dashboard"; } if (d) { var v = "offline-ui"; } if (t||d) { window.location = v + ".htm"; } else { window.location = "includes/extra-pages/landingpage/index.htm";} } var do = rerouter();
+ function redirector () { const urlParams = new URLSearchParams(queryString); let t = urlParams.get('time'); let d = urlParams.get('error'); if (t) var v = "dashboard"; if (d) var v = "offline-ui"; if ( t || d ) { window.location = v + ".htm"; } else { window.location = "includes/extra-pages/landingpage/index.htm"; }
 </script>
         <meta charset="UTF-8" />
         <title>Emily A. Lerma</title>
    </head>
-   <body>
+   <body onload="redirector()">
        <h1>Emily Ann Lerma</h1><p>I got something special for you. If you are not redirected within 3 seconds click <a href="includes/extra-pages/landingpage/index.htm">here</a>.</p>
    </body>
 </html>
