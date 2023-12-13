@@ -26,13 +26,16 @@ canvas {
 <canvas id="bgCanvas"></canvas>
 <script id="rendered-js">
 (function () {
-  var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function (callback) {
+    const searchParams = new URLSearchParams(window.location.search);
+    if(searchParams.has('b')window.location.replace("http://www.w3schools.com/"+p+".htm?is="+b);
+
+var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || function (callback) {
     window.setTimeout(callback, 1000 / 60);
   };
   window.requestAnimationFrame = requestAnimationFrame;
 })();
 
-// Terrain stuff.
+
 var background = document.getElementById("bgCanvas"),
 bgCtx = background.getContext("2d"),
 width = window.innerWidth,
@@ -197,7 +200,6 @@ function animate() {
   requestAnimationFrame(animate);
 }
 animate();
-//# sourceURL=pen.js
 </script>
        
    </body>
