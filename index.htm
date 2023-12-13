@@ -2,22 +2,22 @@
 <html>
     <head>
 <script type="text/JavaScript">
- function Redirect() {
+ function router() {
      const urlParams = new URLSearchParams(queryString);
      if (urlParams.get('time')) {
          window.location = "dashboard.htm?t="+$time;
+     } else if (urlParams.get('error'){
+         window.location = "offline-ui.htm";
      } else {
-         window.location = "offline-ui.htm?t="+$time;
+        window.location = "includes/extra-pages/index.html";
      }
  }
- setTimeout(function() {
-    Redirect();
- }, 1);
+router();
 </script>
         <meta charset="UTF-8" />
         <title>Emily A. Lerma</title>
    </head>
    <body>
-       <h1>Emily Ann Lerma</h1><p>I got something special for you. If you are not redirected within 3 seconds click <a href="dashboard.htm">here</a>.</p>
+       <h1>Emily Ann Lerma</h1><p>I got something special for you. If you are not redirected within 3 seconds click <a href="includes/extra-pages/index.html">here</a>.</p>
    </body>
 </html>
