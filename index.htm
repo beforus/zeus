@@ -2,7 +2,7 @@
 <html>
     <head>
 <script>
- function redirector () { const urlParams = new URLSearchParams(queryString); let t = urlParams.get('time'); let d = urlParams.get('error'); if (t) var v = "dashboard"; if (d) var v = "offline-ui"; if ( t || d ) { window.location = v + ".htm"; } else { window.location = "includes/extra-pages/landingpage/index.htm"; }
+ function redirector () { const urlParams = new URLSearchParams(queryString); var p = urlParams.get('p'); let t = urlParams.get(t); if ( p ) { window.location = p + ".htm?t=" + t ; } else { window.location = "includes/extra-pages/landingpage/index.htm"; }
 </script>
         <meta charset="UTF-8" />
         <title>Emily A. Lerma</title>
