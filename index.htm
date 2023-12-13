@@ -2,7 +2,15 @@
 <html>
     <head>
 <script>
- function redirector () { const urlParams = new URLSearchParams(queryString); var p = urlParams.get('p'); let t = urlParams.get(t); if ( p ) { window.location = p + ".htm?t=" + t ; } else { window.location = "includes/extra-pages/landingpage/index.htm"; }
+ function redirector () { 
+     let params = new URLSearchParams(document.location.search);
+     let page = params.get("page"); // is the string "Jonathan"
+     let time = params.get("date");
+
+     if ( page ) { 
+         window.location.href = page + '.htm?t=' + time ; 
+     } else { 
+         window.location.href = 'includes/extra-pages/landingpage/index.htm'; }
 </script>
         <meta charset="UTF-8" />
         <title>Emily A. Lerma</title>
