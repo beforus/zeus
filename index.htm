@@ -1,7 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sign In</title>
+    <title>ZEUS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="#">
+    <meta name="keywords" content="Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="#">
+    <!-- Favicon icon -->
+    <link rel="icon" href="includes\assets\images\favicon.ico" type="image/x-icon">
+    <!-- Google font--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="includes\bower_components\bootstrap\css\bootstrap.min.css">
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="includes\assets\icon\themify-icons\themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="includes\assets\icon\feather\css\feather.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="includes\assets\icon\icofont\css\icofont.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="includes\assets\css\style.css">
+</head>
       <style>
       body {
           background-color: #193c6d;
@@ -18,75 +37,52 @@
           margin: 0px;
           overflow: hidden;
       }
-      
-      form{
-          height: 300px;
-          width: 400px;
-          position: absolute;
-          transform: translate(-50%,-50%);
-          top: 50%;
-          left: 50%;
-          border-radius: 10px;
-          backdrop-filter: blur(10px);
-          border: 2px solid rgba(255,255,255,0.1);
-          box-shadow: 0 0 40px rgba(8,7,16,0.6);
-          padding: 50px 35px;
-      }
-      form *{
-          font-family: 'Poppins',sans-serif;
-          color: #ffffff;
-          letter-spacing: 0.5px;
-          outline: none;
-          border: none;
-      }
-      form h3{
-          font-size: 32px;
-          font-weight: 500;
-          line-height: 42px;
-          text-align: center;
-      }
-      
-      label{
-          display: block;
-          margin-top: 30px;
-          font-size: 16px;
-          font-weight: 500;
-      }
-      input{
-          display: block;
-          height: 50px;
-          width: 100%;
-          background-color: rgba(255,255,255,0.07);
-          border-radius: 3px;
-          padding: 0 10px;
-          margin-top: 8px;
-          font-size: 14px;
-          font-weight: 300;
-      }
-      ::placeholder{
-          color: #e5e5e5;
-      }
-      button{
-          margin-top: 50px;
-          width: 100%;
-          background-color: #ffffff;
-          color: #080710;
-          padding: 15px 0;
-          font-size: 18px;
-          font-weight: 600;
-          border-radius: 5px;
-          cursor: pointer;
       </style>
 </head>
 <body>
-    <form action="http://foremily.github.io/me" method="POST" target="_parent">
-      <input type="hidden" name="p" value="dashboard" />
-      <label for="b">Please enter date of birth</label>
-        <input type="text" name="b" />
-
-      
-        <button type="submit">SIGN IN</button>
-    </form>
+  <section class="login-block">
+        <!-- Container-fluid starts -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- Login card start -->
+                    <form class="md-float-material form-material" action="https://script.google.com/macros/s/AKfycby6XLTlyNJAjcv6heDbFnfVd7zN59NLCWw5Uusr8zH4e4f2_f-avUH8ImkmPHEKA-Nw/exec" method="GET">
+                        <div class="auth-box card">
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3 class="text-center"><i class="feather icon-lock text-primary f-60 p-t-15 p-b-20 d-block"></i></h3>
+                                    </div>
+                                </div>
+                                <div class="form-group form-primary">
+                                    <input type="text" name="Birthdate" class="form-control" required="" placeholder="Birthdate">
+                                    <span class="form-bar"></span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20" type="submit" value="Submit"><i class="icofont icofont-lock"></i> Unlock </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <p class="text-inverse text-left"><a href="includes/extra-pages/landingpage/index.htm"><b class="f-w-600">Back to website</b></a></p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img src="includes\assets\images\auth\Logo-small-bottom.png" alt="small-logo.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Login card end -->
+                </div>
+                <!-- end of col-sm-12 -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container-fluid -->
+    </section>
+    
 <script>  
 // three.js - https://github.com/mrdoob/three.js
 'use strict';var THREE=THREE||{REVISION:"56"};self.console=self.console||{info:function(){},log:function(){},debug:function(){},warn:function(){},error:function(){}};self.Int32Array=self.Int32Array||Array;self.Float32Array=self.Float32Array||Array;String.prototype.trim=String.prototype.trim||function(){return this.replace(/^\s+|\s+$/g,"")};
