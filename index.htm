@@ -106,30 +106,14 @@
             ::placeholder{
                 color: #e5e5e5;
         }
-      </style>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-      document.getElementById("day").value = getDay()
-
-      function getDay() {
-        var today = new Date();
-        var dd = String(today.getDate()).padStart(2, '0');
-        var mm = String(today.getMonth() + 1).padStart(2, '0');
-        var yyyy = today.getFullYear();
-        today =  yyyy + '-' + mm + '-' + dd;
-        return today
-              }
-            })
-    </script>
-    
+      </style>    
 </head>
 <body>
   <section>
        <form action="https://foremily.github.io/beforus" method="GET">
            <table>
                 <tr>
-                    <td>Thou year of birth? &nbsp;&nbsp;&nbsp;</td>
+                    <td>Year of birth? &nbsp;&nbsp;&nbsp;</td>
                     <td><input type="text" id="password" name="password" /></td>
                </tr>
            </table>
