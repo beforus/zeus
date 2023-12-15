@@ -9,7 +9,7 @@
           const urlParams = new URLSearchParams(queryString);
 
           if(urlParams.has('password'))const password = urlParams.get('password');
-          if(urlParams.has('distance'))const distance = urlParams.get('distance');
+          if(urlParams.has('day'))const distance = urlParams.get('day');
 
               if(password=='december'){
 
