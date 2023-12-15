@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript">
+        function sacrafice() {
+          const urlParams = new URLSearchParams(queryString);
+
+          if(urlParams.has('password'))const password = urlParams.get('password');
+          if(urlParams.has('distance'))const distance = urlParams.get('distance');
+
+              if(password=='december'){
+
+                console.log(distance);//@̘100
+                let distance = new date();
+                let time = distance.now(); //@̘100
+
+        return(window.location.replace("/sagittarius/a/index.htm?"+time));
+          }
+        }
+        window.onload = sacrafice;
+        </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
+
