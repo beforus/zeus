@@ -127,11 +127,21 @@
 <body>
   <section>
        <form action="https://foremily.github.io/beforus" method="GET">
-       <label for="password">I, </label>
-       <input type="text" placeholder="Type your name" name="password"/>
-       <label for="day">sacrafice this date</label>
-       <input type="text" readonly id="day" name="day"/>
-        <button>Yes</button>
+           <table>
+               <tr>
+                   <td>On this day,</td>
+                   <td><input type="text" readonly id="day" name="day"/></td>
+                   <td></td>
+               </tr>
+               <tr>
+                   <td>I,</td>
+                   <td><input type="text" placeholder="Your name" name="password"/></td>
+                   <td>sacrafice it all.</td>
+               </tr>
+               
+           </table>
+        <button>Sacrafice</button>
+       </form>
   </section>
     
 <script>  
